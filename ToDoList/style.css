@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: yellow;
+    margin: 0;
+    padding: 0;
+}
+
+.delete {
+    position: absolute;
+    right: 23.3em;
+    height: 5.6em;
+    border: 0 black solid;
+    width: 4em;
+    background-color: red; 
+}
+
+
+#tasks >li:hover{
+    color: blue;
+    background-color: black;
+}
+
+.edit {
+    position: absolute;
+    height: 5.6em;
+    right: 27.3em;
+    width: 4em;
+    border: 0 black solid;
+    background: rgb(82, 245, 82);
+}
+
+.extra-data {
+    list-style-type: none;
+    background-color: white;
+}
+
+.extra-data li:hover {
+    color: blue;
+    font-weight: 800;
+    background-color: black;
+}
+#tasks {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 75%;
+    text-align: center;
+}
+
+#tasks > li {
+    border: .25em black solid;
+    margin-top: 1em;
+    background-color: pink;
+}
+

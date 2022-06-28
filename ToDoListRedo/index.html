@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List 2.0</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+
+    <!--<button type="button" id="saveBtn" class="btn btn-success">Save</button> -->
+
+    <div id="form-container" class="container">
+        <form id="taskForm" name="taskForm" class="form-horizontal">
+            <h2>Area to Add New Task</h2>
+            <div class="form-group">
+                <label for="task" class="label-control col-sm-1">Task:</label>
+                <div class="col-sm-10">
+                    <input type="text" placeholder="Task" name="task" id="task" autocomplete="off" class="form-control" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="date" class="label-control col-sm-1">Due Date:</label>
+                <div class="col-sm-3">
+                    <input type="date" placeholder="Month/Day/Year" name="date" id="date" autocomplete="off" class="form-control" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="priority" class="label-control col-sm-1">Priority Level:</label>
+                <div class="col-sm-3">
+                    <input type="number" placeholder="Priority Rank" name="priority" id="priority" autocomplete="off" class="form-control" required>
+                </div>
+            </div>
+            <div class="col-sm-offset-1 cols-sm-0">
+                <input class="btn btn-success" type="submit" class="center-block">
+            </div>
+        </form>
+    </div>
+
+    <div id="task-container">
+
+    </div>
+    <div id="tab-bar-box">
+        <div id="tab-bar" >
+            <div>
+                <button id="addTaskBtn" type="button" class="btn btn-danger">Add Task</button>
+                <div id="prioSort">
+                    <button id="sortByPrioAsc" type="button" class="btn btn-warning priorityBtn">Sort By Priority Ascending</button><button id="sortByPrioDesc" type="button" class="btn btn-warning priorityBtn">Sort By Priority Descending</button>
+                </div><div id="dateSort">
+                    <button id="sortByEarlyDate" type="button" class="btn btn-primary dateBtn">Sort By Earlier Date</button><button id="sortByLateDate" type="button" class="btn btn-primary dateBtn">Sort By Later Date</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

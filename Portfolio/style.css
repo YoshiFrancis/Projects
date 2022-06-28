@@ -1,0 +1,137 @@
+body {
+    box-sizing: border-box;
+    margin: auto;
+    border: 1px black solid;
+    background-image: linear-gradient(black, gray, white, black);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main > p {
+    color: white;
+    font-size: large;
+    text-align: center;
+}
+
+.cool-container {
+    background-image: radial-gradient(black, black, gray, black);
+    position: relative;
+    border: 1px orange none;
+    width: 90%;
+    height: 78em; /* for a new card, add 26 height to this */
+    border-radius: 1em;
+    margin: 2em auto;
+    padding: 1em;
+}
+
+.container { /* total height is 26 bc height + margins */
+    position: relative;
+    border: 1px black none;
+    border-radius: 1em;
+    width: 90%;
+    background-image: url('../Pictures/nebula_stars_starry_sky_184578_1920x1080.jpg');
+    margin: 1em auto 1em;
+    height: 24em;
+    text-align: center;
+    color: black;
+}
+
+a:link { 
+    text-decoration: none; 
+    color: red;
+}
+
+
+a:visited { 
+    text-decoration: none; 
+    color: yellow;
+}
+
+
+a:hover { 
+    text-decoration: none; 
+    color: white;
+}
+
+
+a:active { 
+    text-decoration: none; 
+}
+
+.link {
+    position: absolute;
+    width: 30%;
+    height: 21em;
+    margin: 10px 50% 10px 5%;
+    background-color: blue;
+    border-radius: 1em;
+    border: 1px white none;
+    transition: background 1s;
+}
+
+.extra-information {
+    position: absolute;
+    border: 1px black none;
+    width: 55%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 40%;
+    border-radius: 1em;
+    height: 21em;
+    background-color: rgb(147, 21, 250);
+    transition: background 1s;
+}
+
+.extra-information:hover, .link:hover {
+    background: rgb(0,0,0,0);
+    transition: background 1s;
+}
+
+.linktext {
+    font-size: 4em;
+    border: 1px white yellow;
+    margin-top: 0;
+}
+
+.image {
+    position: relative;
+    height: 70%;
+    bottom: 15%;
+    border-radius: 50%;
+}
+
+.title {
+    color: white;
+    background-image: url('../Pictures/nebula_stars_starry_sky_184578_1920x1080.jpg');
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+}
+
+.description {
+    color: rgb(241, 224, 221);
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url('../Pictures/nebula_stars_starry_sky_184578_1920x1080.jpg');
+    margin-top: 0;
+}
+
+.level, .date {
+    color: white;
+    font-size: 2em;
+
+}
+
+.codeused {
+    color: white;
+    font-size: 1em;
+    background-image: url('../Pictures/nebula_stars_starry_sky_184578_1920x1080.jpg');
+}
+
+
+#heading {
+    color: white;
+    text-align: center;
+    font-size: 5em;
+}
+

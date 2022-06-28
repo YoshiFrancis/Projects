@@ -1,0 +1,30 @@
+body {
+    background: white;
+    margin: 0;
+}
+
+.quiz {
+    background: blue;
+    padding: 2em;
+}
+
+.quiz p {
+    font-weight: 600;
+    font-size: 2em;;
+    margin-bottom: 0;
+}
+
+.quiz label {
+    color:white;
+    font-size: 1.2em;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.submit-button {
+    margin-top: 2em;
+}

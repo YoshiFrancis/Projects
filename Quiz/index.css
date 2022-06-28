@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    border: 1px black none;
+}
+/* just to show how to do variavles  (i think)*/
+:root {
+    --quizcolor: black;
+
+}
+
+body {
+    background-image: radial-gradient(white, orange, white, white);
+    margin: 0;
+    width: 100%;
+}
+
+h2 {
+    font-size: 3em;
+    text-align:center;
+    background: white;
+}
+
+.description {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: 600;
+    height: 15%;
+
+}
+
+#score1, #score2, #score3, #score4 {
+    color: black;
+    font-size: 2em;
+    text-align: center;
+}
+.container {
+    width: 100%;
+    margin: 0;
+}
+
+
+
+#quiz1, #quiz2, #quiz3, #quiz4{
+    position: absolute;
+    color: var(--quizcolor, black);
+    width: 25%;
+    height: 80%;
+}
+
+#quiz1 {
+    background: blue;
+}
+#quiz2 {
+    background: pink;
+    left: 25%;
+}
+
+#quiz3 {
+    background: white;
+left: 50%;
+}
+
+#quiz4 {
+    background: brown;
+    left: 75%;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ToDo</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta http-equic="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="ToDo List Project">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Yoshi Foo">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>ToDo List</h1>
+        <ol id="tasks">
+            <li class="toDo">
+                Feed Yoshi
+                <button type="button" class="delete" onclick="removeTag(this)">Delete</button> 
+                <button type="button" class="edit" onclick="editable(this)">Edit</button>
+                <ul class="extra-data">
+                    <li>Date Assigned: </li>
+                    <li>Date Due: </li>
+                    <li>Priority Number: </li>
+                </ul>
+            </li>
+        </ol>
+        <form name="taskForm" id="taskForm">
+            <input type="text" placeholder="Task" name="task" id="task" autocomplete="off">
+            <input type="date" placeholder="Date" name="date" id="taskdate" autocomplete="off">
+            <input type="text" placeholder="Priority Rank" name="priority" id="priority" autocomplete="off">
+            <input type="submit">
+        </form>
+    </body>
+    <script>
+
+    const form = document.querySelector("#taskForm");
+    const task = document.querySelector("#task");
+    const list = document.querySelector("#tasks");
+    const date = document.querySelector("#taskdate");
+    const priority = document.querySelector("#priority");
+
+    function removeTag(attribute) {
+        attribute.parentNode.parentNode.removeChild(attribute.parentNode)
+    }
+
+    function editable(attribute) {
+        attribute.parentNode.setAttribute('contenteditable', 'true')
+        attribute.setAttribute('contenteditable', 'false')
+        document.querySelector(".delete").setAttribute("contenteditable", 'false')
+    }
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault(); //prevents refresh
+        list.innerHTML += `<li class="toDo">
+                ${task.value}
+                <button type="button" class="delete" onclick="removeTag(this)">Delete</button> 
+                <button type="button" class="edit" onclick="editable(this)">Edit</button>
+                <ul class="extra-data">
+                    <li>Date Assigned: ${new Date(Date.now())}</li>
+                    <li>Date Due: ${date.value}</li>
+                    <li>Priority Number: ${priority.value}</li>
+                </ul>
+            </li>`
+        task.value = ''
+    })
+
+
+
+    document.querySelector(".toDo").addEventListener('click', (e) => {
+        e.preventDefault();
+    })
+
+    </script>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Quiz Page</title>
+        <link rel="stylesheet" href="./index.css">
+        <meta http-equic="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="ToDo List Project">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Yoshi Foo">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1>Quiz Page</h1>
+            <p>This is a extremely simplistic quiz page to pass some time and practice some html/css/javascript</p>
+        </header>
+        <main>
+            <div class="container">
+                <a href="./quiz.html">
+                <div id="quiz1">
+                    <h2>Quiz 1</h2>
+                    <p class="description">This quiz will highly challenge your mental capabilites. It will decide whether or not you are able to carry on the familial tradition!<p>
+                    <p id="score1">Current Score: None</p>
+                </div>
+                </a>
+                <a href="./quiz_2.html">
+                    <div id="quiz2">
+                        <h2>Quiz 2</h2>
+                        <p class="description">Quiz about something</p>
+                        <p id="score2">Current Score: None</p>
+    
+                    </div>
+                </a>
+                <a href="./quiz_3.html">
+                    <div id="quiz3">
+                        <h2>Quiz 3</h2>
+                        <p class="description">Quiz about something</p>
+                        <p id="score3">Current Score: None</p>
+                    </div>
+                </a>
+                <a href="./quiz_4.html">
+                    <div id="quiz4">
+                        <h2>Quiz 4</h2>
+                        <p class="description">Quiz about something</p>
+                        <p id="score4">Current Score: None</p>
+                    </div>
+                </a>
+                
+            </div>
+        </main>
+        
+    </body>
+        <script>
+            
+            if (localStorage["quiz1"]) document.querySelector("#score1").innerHTML = `Current Score: ${localStorage["quiz1"]}/6`;
+            if (localStorage["quiz2"]) document.querySelector("#score2").innerHTML = `Current Score: ${localStorage["quiz2"]}/6`;
+            if (localStorage["quiz3"]) document.querySelector("#score3").innerHTML = `Current Score: ${localStorage["quiz3"]}/6`;
+            if (localStorage["quiz4"]) document.querySelector("#score4").innerHTML = `Current Score: ${localStorage["quiz4"]}/6`;
+            
+        </script>
+</html>
